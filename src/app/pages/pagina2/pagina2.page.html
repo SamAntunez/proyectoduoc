@@ -1,0 +1,34 @@
+<ion-header [translucent]="true">
+    <ion-toolbar>
+        <ion-title>
+            FORMULARIO DE MODIFICACION DE DATOS
+        </ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+    <div class="titulo">MODIFICACION DE DATOS</div>
+    <div class="contenido"></div>
+    <form [formGroup]="persona" >
+        <ion-item>
+            <ion-label >Rut : </ion-label>
+            <ion-input formControlName="elRut">{{perso.rut}}</ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-label>Nombre completo : </ion-label>
+            <ion-input formControlName="elNombreCompleto">{{perso.nombre}}</ion-input>
+
+        </ion-item>
+        <ion-item>
+            <ion-label>Edad : </ion-label>
+            <ion-input formControlName="laEdad">{{perso.edad}}</ion-input>
+
+
+        </ion-item>
+        <ion-button color="success" type="submit">MODIFICAR</ion-button>
+        <ion-button color="primary" routerLink="/pagina1">LISTAR</ion-button>
+
+    </form>
+
+    <ion-label>Listado</ion-label>
+</ion-content>
