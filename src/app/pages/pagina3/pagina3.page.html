@@ -1,9 +1,45 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>pagina3</ion-title>
+    <ion-title>FORMULARIO DE REGISTRO</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
+  <ion-card>
+    <ion-card-content>
+      <ion-img src="assets/img/LOGODUOC.png"></ion-img>
+    </ion-card-content>
+  </ion-card>
+  <div class="titulo">Bienvenidos a TellevoAPP
+    <ion-icon name="contact"></ion-icon>
+</div>
+
+<form [formGroup]="registroPersona" (ngSubmit)="grabar()" >
+        
+  <ion-item>
+      <ion-label   position="floating" >Ingresar nombre de usuario: </ion-label>
+      <ion-input formControlName="ingresarNombreUsuario"></ion-input>
+
+  </ion-item>
+  <ion-item>
+      <ion-label position="floating">Ingresar rut: </ion-label>
+      <ion-input formControlName="ingresarRut"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="floating">Ingresar contraseña: </ion-label>
+    <ion-input formControlName="ingresarContraseña"></ion-input>
+</ion-item>
+<ion-item>
+  <ion-label position="floating">Repetir contraseña ingresada: </ion-label>
+  <ion-input formControlName="ingresarRepetirContraseña"></ion-input>
+</ion-item>
+<ion-item>
+  <ion-label position="floating">Ingresar correo institucional: </ion-label>
+  <ion-input formControlName="ingresarCorreo"></ion-input>
+</ion-item>
+  
+  <ion-button color="primary" routerLink="/home">Ingresar registro</ion-button>
+
+</form>
 
 </ion-content>
