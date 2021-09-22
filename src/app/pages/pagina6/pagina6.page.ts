@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { FormControl } from '@angular/forms';
+import { FormGroup } from '@angular/forms';
 
 @Component({
   selector: 'app-pagina6',
@@ -8,6 +10,10 @@ import { Component, OnInit } from '@angular/core';
 export class Pagina6Page implements OnInit {
 
   constructor() { }
+  
+  viajePersona = new FormGroup({  
+    costoPersona : new FormControl('')
+  });
 
   ngOnInit() {
   }

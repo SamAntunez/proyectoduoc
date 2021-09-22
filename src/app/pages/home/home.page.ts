@@ -16,9 +16,9 @@ export class HomePage {
 //creamos controles de formulario
 ///<ion-input [FormContro]= "elRut"> </ion-input>
   persona = new FormGroup({  
-    elRut : new FormControl(''),
-    elNombreCompleto : new FormControl(''),
-    laEdad : new FormControl('')
+    nombre : new FormControl(''),
+    contraseña : new FormControl('')
+    
   });
 
   //creacion de un metodo

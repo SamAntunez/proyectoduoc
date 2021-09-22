@@ -1,9 +1,32 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>pagina6</ion-title>
+    <ion-title>PROGRAMAR VIAJE</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
+  <div class="titulo">Bienvenidos a TellevoAPP
+    <ion-icon name="contact"></ion-icon>
+</div>
+
+<form [formGroup]="viajePersona" (ngSubmit)="grabar()" >
+  <ion-card>
+    <ion-card-content>
+      <ion-img src="assets/img/LOGODUOC.png"></ion-img>
+    </ion-card-content>
+  </ion-card>
+  <ion-item>
+    <ion-label position="floating">Ingresar costo por persona: </ion-label>
+    <ion-input formControlName="costoPersona"></ion-input>
+    
+
+
+</ion-item>
+
+  <ion-button color="primary" routerLink="/pagina5">Atras</ion-button>
+</form>
+  <ion-card-content>
+    <ion-img src="assets/img/a.png"></ion-img>
+  </ion-card-content>
 
 </ion-content>
