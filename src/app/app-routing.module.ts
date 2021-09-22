@@ -31,10 +31,18 @@ const routes: Routes = [
     path: 'pagina6',
     loadChildren: () => import('./pages/pagina6/pagina6.module').then( m => m.Pagina6PageModule)
   },
-
+ 
   {
     path: 'pagina7',
     loadChildren: () => import('./pages/pagina7/pagina7.module').then( m => m.Pagina7PageModule)
+  },
+  {
+    path: 'pagina8',
+    loadChildren: () => import('./pages/pagina8/pagina8.module').then( m => m.Pagina8PageModule)
+  },
+  {
+    path: 'pagina9',
+    loadChildren: () => import('./pages/pagina9/pagina9.module').then( m => m.Pagina9PageModule)
   },
 ];
 
