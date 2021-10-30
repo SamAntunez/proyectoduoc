@@ -7,3 +7,9 @@
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 
 }
+ion-content {
+    --background: url('/assets/img/fondo2.jpg') 0 0/100% 100% no-repeat;
+  }
+  ion-item{
+      background: transparent;
+  }

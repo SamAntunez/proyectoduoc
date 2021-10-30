@@ -19,6 +19,7 @@ export class HomePage {
     nombre : new FormControl(''),
     contraseña : new FormControl('')
     
+    
   });
 
   //creacion de un metodo
@@ -26,9 +27,12 @@ export class HomePage {
   perso:any;
   grabar(){
     this.perso={
-      rut: this.persona.controls.elRut.value,
+      
       nombre: this.persona.controls.elNombreCompleto.value,
-      edad: this.persona.controls.laEdad.value
+      rut: this.persona.controls.elRut.value,
+      contrasena: this.persona.controls.laContrasena.value,
+      edad: this.persona.controls.laEdad.value,
+      correo: this.persona.controls.elCorreo.value
     };
     this.lista_personas.push(this.perso);
     var datos =this.lista_personas;
